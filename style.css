@@ -1,0 +1,532 @@
+body {
+    margin: 0;
+}
+
+
+/* Keyframes for slide-up animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Initial state of the element before animation */
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+/* State after animation */
+.slide-up.visible {
+    animation: slideUp 0.8s forwards;
+}
+
+
+
+
+
+
+
+
+
+label{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+.whatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(./images/e.webp);
+    background-size:contain;
+}
+/* Background sections */
+.bg {
+    height: 500px;
+    width: 100%;
+    background-image: url(./images/c.jpg);
+    text-align: center;
+    background-repeat: round;
+}
+
+.bg2 {
+    height: 800px;
+    width: 100%;
+    background-image: url(./images/a.jpg);
+    text-align: center;
+    background-repeat: round;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.textbox {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    align-content: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Timeline styles */
+.timeline {
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-left: -10%;
+}
+
+.timeline ol {
+    font-size: 0;
+    width: 100vw;
+    padding: 250px 0;
+    transition: all 1s;
+    margin-left: -10%;
+}
+
+.timeline ol li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: 170px;
+    height: 3px;
+    background: #835e54;
+}
+
+.timeline ol li:last-child {
+    width: 250px;
+}
+
+.timeline ol li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(120% + 62px);
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border-radius: 10%;
+    background: #835e54;
+}
+
+.timeline ol li div {
+    position: absolute;
+    left: calc(70% + 10px);
+    width: 270px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.timeline ol li div::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #835e54;
+}
+
+.timeline ol li:nth-child(odd) div {
+    top: -50px;
+    transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(even) div {
+    top: calc(100% + 50px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+    top: -25px;
+    width: 2px;
+    height: 30px;
+    left: 50%;
+    background-color: #835e54;
+}
+
+.timeline time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+.block{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    color: #49332c;
+    margin-top: 20px;
+}
+
+.heading2{
+    width: 80%;
+    margin: auto;
+}
+
+.cardholder {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    color: #49332c;
+}
+
+
+.card {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+}
+
+
+.box{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.box2{
+ height: auto;
+ width: 70%;
+}
+
+.box3{
+    height: calc(box2);
+    width: 30%;
+    min-width: 250px;
+    background-image: url(./images/d.jpg);
+    background-size: cover;
+
+}
+
+.box4{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10%;
+}
+
+.card2{
+    width: 250px;   
+}
+
+.card3{
+    width: 90%;   
+}
+
+
+.block2{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #835e54;
+    color: white;
+    margin-top: 20px;
+}
+
+.cardholder2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+}
+
+.card4{
+    width: 23%;
+    min-width: 100px;
+}
+
+.block3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+
+.box5{
+    height: calc(box6);
+    width: 30%;
+    background-image: url(./images/b.jpg);
+    background-size: cover;
+}
+
+.box6{
+    min-height: 400px;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left ;
+    /* background-color: aquamarine; */
+}
+
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid rgb(44, 44, 52);
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label .triangle {
+    transform: rotate(90deg);
+  }                
+  
+  .description {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label + .description {
+    display: block;
+  }
+  
+
+
+
+
+  .block4{
+    height: auto;
+    width: 100%;
+    background-color: #49332c;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .box7{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 500px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cardholder3{
+    display: flex;
+    gap: 50px;
+    margin: auto;
+  }
+
+  .heading{
+    width: 100%;
+  }
+.table{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #49332c;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 2px;
+    border: 2px solid #f0ede9;
+  }
+  td{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f0ede9;
+  }
+
+
+  .copyright{
+    width: 100%;
+    height: auto;
+    background-color: #49332c;
+    color:#b3978f;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+/* Media Queries for responsiveness */
+
+/* For tablets and larger screens */
+@media (max-width: 820px) {
+    .textbox {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .bg {
+        height: 65%;
+    }
+
+    .box2{
+        width: 100%;
+       }
+    .box3{
+        height: 500px;
+        width: 100%;
+    }
+
+    .card2{
+        width: 100%;
+    }
+
+    .card4{
+        width: 40%;
+    }
+    .block3{
+        gap: 0px;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    .box5{
+        height: 400px;
+        width: 100%;
+    }
+    
+    .box6{
+        margin: 0px;
+        height: auto;
+        width: 100%;
+    }
+
+    .box7{
+        width: 90%;
+    }
+
+    .table{
+        width: 100%;
+        font-size: 1rem;
+        margin: auto;
+      }
+
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .textbox {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .bg {
+        height: 50%;
+    }
+
+    .box2{
+        width: 100%;
+       }
+    .box3{
+        height: 250px;
+        width: 100%;
+    }
+    .card4{
+        width: 80%;
+    }
+
+    .block3{
+        gap: 0px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .box6{
+        margin: auto;
+        height: auto;
+        width: 80%;
+    }
+    .box7{
+        width: 100%;
+    }
+    .table{
+        width: 100%;
+        font-size: 0.5rem;
+        margin: auto;
+      }
+
+      .whatsapp{
+        height: 60px;
+        width: 60px;
+      }
+      .copyright{
+        font-size: .8rem;
+        margin-top: 30px;
+      }
+}
