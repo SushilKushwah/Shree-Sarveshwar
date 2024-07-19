@@ -528,5 +528,6 @@ p {
       .copyright{
         font-size: .8rem;
         margin-top: 300px;
+        height:100px;
       }
 }
